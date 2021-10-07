@@ -14,9 +14,8 @@
 <p class="has-line-data" data-line-start="12" data-line-end="13">En base a las pautas establecidas en el planteamiento de la app, creamos el siguiente modelo entidad-relación que sentará las bases para nuestro proyecto:</p>
 <br>
 <div align="center">
-
-  <img src="https://user-images.githubusercontent.com/73242474/135690871-eabb0dc6-d8c2-4d27-af7f-33a9cb27fd72.png">
-  </div>
+  <img src="https://user-images.githubusercontent.com/73242474/136458537-a8629de4-c404-4ed8-920e-9da7fb8b170b.png">
+</div>
 <br>
 <p class="has-line-data" data-line-start="5" data-line-end="6">Como podemos observar, el modelo en cuestión consta de cinco entidades (Usuario, Review, Libro, BibliotecaPersonal y Género) y cuatro relaciones (Escribe, Realiza, Tiene y Pertenece). De este modo vemos que la base de datos de nuestra aplicación constará de cinco tablas, relacionadas entre sí de la forma descrita en este modelo. Cabe destacar que los atributos UsuarioEspecial y PagoOpcional de las entidades Usuario y Libro son atributos booleanos cuya función es indicar si el usuario se trata de una editorial o un agente literario, en el caso de UsuarioEspecial, y de mostrar si el Usuario realizó el pago necesario para destacar su libro en el catálogo, en el caso de PagoOpcional.</p>
 </div>
