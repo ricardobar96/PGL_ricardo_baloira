@@ -1,43 +1,34 @@
 package es.iespuerto.ricardo.booknown.controlador;
 
 public class GestorBibliotecas implements IBiblioteca{
+
     @Override
-    public void agregarAutor() {
+    public void seguirUsuario() {
 
     }
 
     @Override
-    public void eliminarAutor() {
+    public void dejarDeSeguirUsuario(int idUsuario) {
 
     }
 
     @Override
-    public void agregarPendiente() {
+    public void agregarLibroLeido() {
 
     }
 
     @Override
-    public void eliminarPendiente() {
+    public void eliminarLibroLeido(int idLibro) {
 
     }
 
     @Override
-    public void agregarLeido() {
+    public void agregarLibroCreado() {
 
     }
 
     @Override
-    public void eliminarLeido() {
-
-    }
-
-    @Override
-    public void agregarCreado() {
-
-    }
-
-    @Override
-    public void eliminarCreado() {
+    public void eliminarLibroCreado(int idLibro) {
 
     }
 }

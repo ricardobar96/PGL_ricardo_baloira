@@ -4,10 +4,9 @@ import java.util.ArrayList;
 
 public class Biblioteca {
     private int idBiblioteca;
-    private ArrayList<Usuario> autores;
-    private ArrayList<Libro> creados;
-    private ArrayList<Libro> pendientes;
-    private ArrayList<Libro> leidos;
+    private ArrayList<Usuario> usuariosSeguidos; //ArrayList que almacenara los usuarios seguidos por el usuario
+    private ArrayList<Libro> librosCreados; //ArrayList que almacenara los libros creados por el usuario
+    private ArrayList<Libro> librosLeidos; //ArrayList que almacenara los libros leidos por el usuario
 
     /**
      * Constructor por defecto de la clase Biblioteca
@@ -18,59 +17,16 @@ public class Biblioteca {
     /**
      * Constructor de la clase Biblioteca
      * @param idBiblioteca
-     * @param autores
-     * @param creados
-     * @param pendientes
-     * @param leidos
+     * @param usuariosSeguidos
+     * @param librosCreados
+     * @param librosLeidos
      */
-    public Biblioteca(int idBiblioteca, ArrayList<Usuario> autores, ArrayList<Libro> creados, ArrayList<Libro> pendientes, ArrayList<Libro> leidos) {
+    public Biblioteca(int idBiblioteca, ArrayList<Usuario> usuariosSeguidos, ArrayList<Libro> librosCreados, ArrayList<Libro> librosLeidos) {
         this.idBiblioteca = idBiblioteca;
-        this.autores = autores;
-        this.creados = creados;
-        this.pendientes = pendientes;
-        this.leidos = leidos;
+        this.usuariosSeguidos = usuariosSeguidos;
+        this.librosCreados = librosCreados;
+        this.librosLeidos = librosLeidos;
     }
-
-    public int getIdBiblioteca() {
-        return idBiblioteca;
-    }
-
-    public void setIdBiblioteca(int idBiblioteca) {
-        this.idBiblioteca = idBiblioteca;
-    }
-
-    public ArrayList<Usuario> getAutores() {
-        return autores;
-    }
-
-    public void setAutores(ArrayList<Usuario> autores) {
-        this.autores = autores;
-    }
-
-    public ArrayList<Libro> getCreados() {
-        return creados;
-    }
-
-    public void setCreados(ArrayList<Libro> creados) {
-        this.creados = creados;
-    }
-
-    public ArrayList<Libro> getPendientes() {
-        return pendientes;
-    }
-
-    public void setPendientes(ArrayList<Libro> pendientes) {
-        this.pendientes = pendientes;
-    }
-
-    public ArrayList<Libro> getLeidos() {
-        return leidos;
-    }
-
-    public void setLeidos(ArrayList<Libro> leidos) {
-        this.leidos = leidos;
-    }
-
     /**
      * Funcion que muestra los valores de los atributos del objeto Biblioteca
      * @return String con los valores de cada atributo del objeto Biblioteca
@@ -79,10 +35,9 @@ public class Biblioteca {
     public String toString() {
         return "Biblioteca{" +
                 "idBiblioteca=" + idBiblioteca +
-                ", autores=" + autores +
-                ", creados=" + creados +
-                ", pendientes=" + pendientes +
-                ", leidos=" + leidos +
+                ", usuariosSeguidos=" + usuariosSeguidos +
+                ", librosCreados=" + librosCreados +
+                ", librosLeidos=" + librosLeidos +
                 '}';
     }
 }

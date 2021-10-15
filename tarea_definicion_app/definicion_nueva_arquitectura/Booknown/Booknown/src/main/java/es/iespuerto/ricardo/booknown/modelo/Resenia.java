@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Resenia {
     private int idResenia, puntuacion, meGusta;
-    private String autor, libro;
+    private String autor, libroTitulo;
     private Date fecha;
 
     /**
@@ -19,15 +19,15 @@ public class Resenia {
      * @param puntuacion
      * @param meGusta
      * @param autor
-     * @param libro
+     * @param libroTitulo
      * @param fecha
      */
-    public Resenia(int idResenia, int puntuacion, int meGusta, String autor, String libro, Date fecha) {
+    public Resenia(int idResenia, int puntuacion, int meGusta, String autor, String libroTitulo, Date fecha) {
         this.idResenia = idResenia;
         this.puntuacion = puntuacion;
         this.meGusta = meGusta;
         this.autor = autor;
-        this.libro = libro;
+        this.libroTitulo = libroTitulo;
         this.fecha = fecha;
     }
 
@@ -64,11 +64,11 @@ public class Resenia {
     }
 
     public String getLibro() {
-        return libro;
+        return libroTitulo;
     }
 
     public void setLibro(String libro) {
-        this.libro = libro;
+        this.libroTitulo = libro;
     }
 
     public Date getFecha() {
@@ -90,7 +90,7 @@ public class Resenia {
                 ", puntuacion=" + puntuacion +
                 ", meGusta=" + meGusta +
                 ", autor='" + autor + '\'' +
-                ", libro='" + libro + '\'' +
+                ", libro='" + libroTitulo + '\'' +
                 ", fecha=" + fecha +
                 '}';
     }

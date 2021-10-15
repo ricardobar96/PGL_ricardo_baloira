@@ -15,4 +15,9 @@ public class GestorResenia implements IGestorResenia{
     public void eliminarResenia(int idResenia) {
 
     }
+
+    @Override
+    public void darMeGusta(int idResenia) {
+
+    }
 }

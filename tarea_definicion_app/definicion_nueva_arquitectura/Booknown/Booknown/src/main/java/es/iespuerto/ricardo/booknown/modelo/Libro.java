@@ -6,13 +6,9 @@ import java.util.Date;
 public class Libro {
     private int idLibro, visualizaciones, paginas;
     private double puntuacionMedia;
-    private String titulo, autor;
+    private String titulo, autor, genero;
     private Date fechaActualizacion, fechaPublicacion;
     private boolean pagoOpcional;
-    private ArrayList<Genero> generos;
-    /**Atributo anadido. Todos los libros van dentro del ArrayList del
-    catalogo y, dentro de cada libro, existira un ArrayList con sus generos para poder hacer
-     busquedas en GestorLibros por generos, no solo por titulo y autor*/
 
     /**
      * Constructor por defecto de la clase Libro
@@ -28,25 +24,22 @@ public class Libro {
      * @param puntuacionMedia
      * @param titulo
      * @param autor
+     * @param genero
      * @param fechaActualizacion
      * @param fechaPublicacion
      * @param pagoOpcional
      */
-    public Libro(int idLibro, int visualizaciones, int paginas, double puntuacionMedia, String titulo, String autor, Date fechaActualizacion, Date fechaPublicacion, boolean pagoOpcional, ArrayList<Genero> generos) {
+    public Libro(int idLibro, int visualizaciones, int paginas, double puntuacionMedia, String titulo, String autor, String genero, Date fechaActualizacion, Date fechaPublicacion, boolean pagoOpcional) {
         this.idLibro = idLibro;
         this.visualizaciones = visualizaciones;
         this.paginas = paginas;
         this.puntuacionMedia = puntuacionMedia;
         this.titulo = titulo;
         this.autor = autor;
+        this.genero = genero;
         this.fechaActualizacion = fechaActualizacion;
         this.fechaPublicacion = fechaPublicacion;
         this.pagoOpcional = pagoOpcional;
-        this.generos = generos;
-    }
-
-    public Libro(int idLibro) {
-        this.idLibro = idLibro;
     }
 
     public int getIdLibro() {
@@ -97,6 +90,14 @@ public class Libro {
         this.autor = autor;
     }
 
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
     public Date getFechaActualizacion() {
         return fechaActualizacion;
     }
@@ -121,14 +122,6 @@ public class Libro {
         this.pagoOpcional = pagoOpcional;
     }
 
-    public ArrayList<Genero> getGeneros() {
-        return generos;
-    }
-
-    public void setGeneros(ArrayList<Genero> generos) {
-        this.generos = generos;
-    }
-
     /**
      * Funcion que muestra los valores de los atributos del objeto Libro
      * @return String con los valores de cada atributo del objeto Libro
@@ -142,10 +135,10 @@ public class Libro {
                 ", puntuacionMedia=" + puntuacionMedia +
                 ", titulo='" + titulo + '\'' +
                 ", autor='" + autor + '\'' +
+                ", genero='" + genero + '\'' +
                 ", fechaActualizacion=" + fechaActualizacion +
                 ", fechaPublicacion=" + fechaPublicacion +
                 ", pagoOpcional=" + pagoOpcional +
-                ", generos=" + generos +
                 '}';
     }
 }
