@@ -7,35 +7,45 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Login Form"/>
+            android:text="BOOKNOWN"
+            android:textSize="32sp"
+            android:textColor="#E5BB1E"/>
 
         <EditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Email"/>
+            android:hint="Email" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Password"/>
+            android:hint="Password" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/loginb"
+            android:layout_width="324dp"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:id="@+id/loginb"/>
+            android:text="INICIAR SESIÓN" />
+
+        <Button
+            android:id="@+id/botonCrearCuenta"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:text="Crear Cuenta"
+            android:backgroundTint="#E5BB1E"/>
     </LinearLayout>
 
 </LinearLayout>

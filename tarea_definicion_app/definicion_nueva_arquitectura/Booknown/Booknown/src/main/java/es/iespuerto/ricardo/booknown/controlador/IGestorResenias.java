@@ -1,6 +1,6 @@
 package es.iespuerto.ricardo.booknown.controlador;
 
-public interface IGestorResenia {
+public interface IGestorResenias {
     void crearResenia();
     void modificarResenia(int idResenia);
     void eliminarResenia(int idResenia);

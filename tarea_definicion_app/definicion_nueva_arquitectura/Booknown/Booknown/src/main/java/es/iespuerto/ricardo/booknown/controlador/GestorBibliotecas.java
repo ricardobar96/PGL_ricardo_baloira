@@ -1,6 +1,6 @@
 package es.iespuerto.ricardo.booknown.controlador;
 
-public class GestorBibliotecas implements IBiblioteca{
+public class GestorBibliotecas implements IGestorBibliotecas {
 
     @Override
     public void seguirUsuario() {

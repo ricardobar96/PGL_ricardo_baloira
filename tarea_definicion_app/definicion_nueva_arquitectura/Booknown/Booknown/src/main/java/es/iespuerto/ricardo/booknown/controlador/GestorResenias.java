@@ -1,6 +1,6 @@
 package es.iespuerto.ricardo.booknown.controlador;
 
-public class GestorResenia implements IGestorResenia{
+public class GestorResenias implements IGestorResenias {
     @Override
     public void crearResenia() {
 

@@ -2,7 +2,7 @@ package es.iespuerto.ricardo.booknown.controlador;
 
 import java.util.ArrayList;
 
-public interface IBiblioteca {
+public interface IGestorBibliotecas {
     void seguirUsuario(); //agregar al ArrayList usuariosSeguidos un nuevo objeto Usuario
     void dejarDeSeguirUsuario(int idUsuario); //eliminar del ArrayList usuariosSeguidos un objeto Usuario
 
