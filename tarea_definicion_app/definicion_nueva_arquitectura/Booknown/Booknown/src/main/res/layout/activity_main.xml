@@ -25,18 +25,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Email" />
+            android:hint="Email"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Password" />
+            android:hint="Password"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/loginb"
-            android:layout_width="324dp"
+            android:layout_width="332dp"
             android:layout_height="wrap_content"
             android:text="INICIAR SESIÓN" />
 
@@ -44,8 +46,8 @@
             android:id="@+id/botonCrearCuenta"
             android:layout_width="329dp"
             android:layout_height="wrap_content"
-            android:text="Crear Cuenta"
-            android:backgroundTint="#E5BB1E"/>
+            android:backgroundTint="#E5BB1E"
+            android:text="Crear Cuenta" />
     </LinearLayout>
 
 </LinearLayout>
