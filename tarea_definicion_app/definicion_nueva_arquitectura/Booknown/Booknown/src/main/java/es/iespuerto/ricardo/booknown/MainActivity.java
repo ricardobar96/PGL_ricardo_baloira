@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity implements ILoginView {
     @Override
     public void OnLoginSuccess(String message) {
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, PantallaPrincipal.class);
+        startActivity(intent);
     }
     @Override
     public void OnLoginError(String message) {

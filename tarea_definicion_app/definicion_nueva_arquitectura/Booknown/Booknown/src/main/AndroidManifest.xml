@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_Booknown">
         <activity
+            android:name=".PantallaPrincipal"
+            android:exported="true" />
+        <activity
             android:name=".PantallaCrearUsuario"
             android:exported="true" />
         <activity
