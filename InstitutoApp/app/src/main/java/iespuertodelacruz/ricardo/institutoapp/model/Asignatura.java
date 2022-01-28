@@ -2,12 +2,23 @@ package iespuertodelacruz.ricardo.institutoapp.model;
 
 import android.content.ContentValues;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import iespuertodelacruz.ricardo.institutoapp.database.contract.AlumnoContract;
 import iespuertodelacruz.ricardo.institutoapp.database.contract.AsignaturaContract;
 
 public class Asignatura {
+    @SerializedName("idasignatura")
+    @Expose
     private int id;
+
+    @SerializedName("nombre")
+    @Expose
     private String nombre;
+
+    @SerializedName("curso")
+    @Expose
     private String curso;
 
     public Asignatura() {
@@ -15,6 +26,11 @@ public class Asignatura {
 
     public Asignatura(int id, String nombre, String curso) {
         this.id = id;
+        this.nombre = nombre;
+        this.curso = curso;
+    }
+
+    public Asignatura(String nombre, String curso) {
         this.nombre = nombre;
         this.curso = curso;
     }
@@ -41,6 +57,15 @@ public class Asignatura {
 
     public void setCurso(String curso) {
         this.curso = curso;
+    }
+
+    @Override
+    public String toString() {
+        return "Asignatura{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", curso='" + curso + '\'' +
+                '}';
     }
 
     public ContentValues toContentValues() {

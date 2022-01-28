@@ -77,7 +77,7 @@ public class AlumnoHelper extends ComunHelper{
                                 AlumnoContract.AlumnoEntry.COLUMN_NAME_NOMBRE)),
                         cursor.getString(cursor.getColumnIndexOrThrow(
                                 AlumnoContract.AlumnoEntry.COLUMN_NAME_APELLIDO)),
-                        cursor.getString(cursor.getColumnIndexOrThrow(
+                        cursor.getLong(cursor.getColumnIndexOrThrow(
                                 AlumnoContract.AlumnoEntry.COLUMN_NAME_FECHA))
                 );
             }
@@ -101,7 +101,7 @@ public class AlumnoHelper extends ComunHelper{
                                 AlumnoContract.AlumnoEntry.COLUMN_NAME_NOMBRE)),
                         cursor.getString(cursor.getColumnIndexOrThrow(
                                 AlumnoContract.AlumnoEntry.COLUMN_NAME_APELLIDO)),
-                        cursor.getString(cursor.getColumnIndexOrThrow(
+                        cursor.getLong(cursor.getColumnIndexOrThrow(
                                 AlumnoContract.AlumnoEntry.COLUMN_NAME_FECHA)))
                 );
             }

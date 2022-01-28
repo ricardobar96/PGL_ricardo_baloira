@@ -6,13 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!--<Button
+            android:id="@+id/buttonAlumno"
+            android:layout_width="416dp"
+            android:layout_height="85dp"
+            android:onClick="accionesAlumno"
+            android:text="Alumno"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="2dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnGetalumnosList"-->
+<!--            android:layout_width="416dp"-->
+<!--            android:layout_height="85dp"-->
+<!--            android:onClick="verListaAlumnos"-->
+<!--            android:text="Lista de alumnos"-->
+<!--            tools:ignore="MissingConstraints"-->
+<!--            tools:layout_editor_absoluteX="-3dp"-->
+<!--            tools:layout_editor_absoluteY="122dp" />-->
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

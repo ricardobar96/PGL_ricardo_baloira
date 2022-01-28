@@ -2,18 +2,32 @@ package iespuertodelacruz.ricardo.institutoapp.model;
 
 import android.content.ContentValues;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import iespuertodelacruz.ricardo.institutoapp.database.contract.AlumnoContract;
 
 public class Alumno {
+    @SerializedName("dni")
+    @Expose
     private String dni;
+
+    @SerializedName("nombre")
+    @Expose
     private String nombre;
+
+    @SerializedName("apellidos")
+    @Expose
     private String apellido;
-    private String fechaNac;
+
+    @SerializedName("fechanacimiento")
+    @Expose
+    private Long fechaNac;
 
     public Alumno() {
     }
 
-    public Alumno(String dni, String nombre, String apellido, String fechaNac) {
+    public Alumno(String dni, String nombre, String apellido, Long fechaNac) {
         this.dni = dni;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -44,11 +58,11 @@ public class Alumno {
         this.apellido = apellido;
     }
 
-    public String getFechaNac() {
+    public Long getFechaNac() {
         return fechaNac;
     }
 
-    public void setFechaNac(String fechaNac) {
+    public void setFechaNac(Long fechaNac) {
         this.fechaNac = fechaNac;
     }
 
@@ -59,5 +73,15 @@ public class Alumno {
         values.put(AlumnoContract.AlumnoEntry.COLUMN_NAME_APELLIDO, this.apellido);
         values.put(AlumnoContract.AlumnoEntry.COLUMN_NAME_FECHA, this.fechaNac);
         return values;
+    }
+
+    @Override
+    public String toString() {
+        return "Alumno{" +
+                "dni='" + dni + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", fechaNac='" + fechaNac + '\'' +
+                '}';
     }
 }

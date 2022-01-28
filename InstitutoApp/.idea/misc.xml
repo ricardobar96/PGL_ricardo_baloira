@@ -3,7 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/layout/activity_alumno.xml" value="0.176" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/layout/activity_asig.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/layout/list_alumno.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/layout/list_asig.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/layout/menu_listas.xml" value="0.23596014492753623" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/InstitutoApp/app/src/main/res/menu/menu_listas.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/activity_alumno.xml" value="0.29483695652173914" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.29483695652173914" />
+        <entry key="app/src/main/res/layout/list_alumno.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
